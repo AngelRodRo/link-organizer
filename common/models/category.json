@@ -1,0 +1,17 @@
+{
+    "name": "Category",
+    "base": "PersistedModel",
+    "properties": {
+        "name": {
+            "type": "String"
+        }
+    },
+    "relations": {
+        "links" : {
+            "model": "Link",
+            "type": "hasMany",
+            "foreignKey": "categoryId"
+        }
+    }
+  }
+  

@@ -1,0 +1,13 @@
+{
+    "name": "Link",
+    "base": "PersistedModel",
+    "properties": {
+        "name": {
+            "type": "String"
+        },
+        "url": {
+            "type": "String"
+        }
+    }
+  }
+  
