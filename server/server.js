@@ -11,8 +11,6 @@ app.post("/slack-commands", async (req, res) => {
   const body = req.body;
   const [title, category, url] = body.text.split(" ");
 
-  
-
   const categoryInstance = await Category.findOrCreate({ name: category }, { name: category });
   const link = {
     title, 
